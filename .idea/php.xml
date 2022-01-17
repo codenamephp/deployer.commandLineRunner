@@ -133,6 +133,7 @@
   <component name="PhpProjectSharedConfiguration" php_language_level="8.1" />
   <component name="PhpUnit">
     <phpunit_settings>
+      <phpunit_by_interpreter interpreter_id="953b4b78-f7d1-41e8-86eb-597a819e8128" load_method="PHPUNIT_PHAR" configuration_file_path="/app/test/phpunit.dist.xml" custom_loader_path="/app/vendor/autoload.php" phpunit_phar_path="/app/tools/phpunit.phar" use_configuration_file="true" />
       <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/vendor/autoload.php" />
     </phpunit_settings>
   </component>

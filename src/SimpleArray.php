@@ -20,23 +20,20 @@ namespace de\codenamephp\deployer\command;
 use de\codenamephp\deployer\command\runConfiguration\iRunConfiguration;
 
 /**
- * Interface for commands that will be resolved to a string and most likely passed to Deployer\run
- *
- * Implementations should take care of the binary, arguments, options, sudo, ...
+ * Builds the command line by simple concatenating the array parts to a string
  */
-interface iCommand {
+final class SimpleArray implements iCommand {
 
   /**
-   * The run configuration that is passed to the command line run
-   *
-   * @return iRunConfiguration
+   * @param array<string> $commandParts
    */
-  public function getRunConfiguration() : iRunConfiguration;
+  public function __construct(public array $commandParts, public iRunConfiguration $runConfiguration) {}
 
-  /**
-   * The complete command line as string, e.g. 'composer install -vvv --no-dev'
-   *
-   * @return string
-   */
-  public function __toString() : string;
+  public function getRunConfiguration() : iRunConfiguration {
+    return $this->runConfiguration;
+  }
+
+  public function __toString() : string {
+    return implode(' ', array_filter($this->commandParts));
+  }
 }
