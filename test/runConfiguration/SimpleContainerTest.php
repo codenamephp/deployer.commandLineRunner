@@ -36,7 +36,7 @@ final class SimpleContainerTest extends TestCase {
     $this->sut->timeout = 123;
     $this->sut->idleTimeout = 456;
     $this->sut->secret = 'some secret';
-    $this->sut->env = ['some' => 'env'];
+    $this->sut->env = ['some' => 'env', 'bla' => ''];
     $this->sut->realTimeOutput = true;
     $this->sut->noThrow = true;
     $this->sut->cwd = 'some dir';

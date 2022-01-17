@@ -36,7 +36,7 @@ interface iRunConfiguration {
    *    timeout?: int,
    *    idle_timeout?: int,
    *    secret?: string,
-   *    env?: array<string, scalar>,
+   *    env?: array<scalar>,
    *    real_time_output?: bool,
    *    no_throw?: bool,
    *    cwd?: string,

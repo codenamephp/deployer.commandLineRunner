@@ -38,7 +38,7 @@ final class SimpleContainer implements iRunConfiguration {
       'timeout' => $this->timeout,
       'idle_timeout' => $this->idleTimeout,
       'secret' => $this->secret,
-      'env' => $this->env,
+      'env' => array_filter($this->env, static fn($value) : bool => !empty($value) && is_scalar($value)),
       'real_time_output' => $this->realTimeOutput,
       'no_throw' => $this->noThrow,
       'cwd' => $this->cwd,
