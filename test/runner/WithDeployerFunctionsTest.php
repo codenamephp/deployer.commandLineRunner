@@ -17,6 +17,7 @@
 
 namespace de\codenamephp\deployer\command\test\runner;
 
+use de\codenamephp\deployer\base\functions\All;
 use de\codenamephp\deployer\base\functions\iRun;
 use de\codenamephp\deployer\command\iCommand;
 use de\codenamephp\deployer\command\runConfiguration\iRunConfiguration;
@@ -41,6 +42,12 @@ final class WithDeployerFunctionsTest extends TestCase {
     $this->sut = new WithDeployerFunctions($deployerFunction);
 
     self::assertSame($deployerFunction, $this->sut->deployerFunction);
+  }
+
+  public function test__construct_withoutArguments() : void {
+    $this->sut = new WithDeployerFunctions();
+
+    self::assertInstanceOf(All::class, $this->sut->deployerFunction);
   }
 
   public function testRun() : void {

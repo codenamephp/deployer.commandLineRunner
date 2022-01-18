@@ -17,6 +17,7 @@
 
 namespace de\codenamephp\deployer\command\runner;
 
+use de\codenamephp\deployer\base\functions\All;
 use de\codenamephp\deployer\base\functions\iRun;
 use de\codenamephp\deployer\command\iCommand;
 
@@ -25,7 +26,7 @@ use de\codenamephp\deployer\command\iCommand;
  */
 final class WithDeployerFunctions implements iRunner {
 
-  public function __construct(public iRun $deployerFunction) {}
+  public function __construct(public iRun $deployerFunction = new All()) {}
 
   public function run(iCommand $command) : string {
     return $this->deployerFunction->run($command->__toString(), $command->getRunConfiguration()->getOptions());
