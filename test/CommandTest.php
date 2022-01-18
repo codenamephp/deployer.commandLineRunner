@@ -37,13 +37,13 @@ final class CommandTest extends TestCase {
     $arguments = ['test', '--test'];
     $envVars = ['some' => 'env'];
 
-    $this->sut = new Command($binary, $runConfiguration, $arguments, $envVars, true);
+    $this->sut = new Command($binary, $arguments, $envVars, true, $runConfiguration);
 
     self::assertSame($binary, $this->sut->binary);
-    self::assertSame($runConfiguration, $this->sut->runConfiguration);
     self::assertSame($arguments, $this->sut->arguments);
     self::assertSame($envVars, $this->sut->envVars);
     self::assertTrue($this->sut->sudo);
+    self::assertSame($runConfiguration, $this->sut->runConfiguration);
   }
 
   public function test__toString() : void {

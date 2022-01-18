@@ -27,17 +27,17 @@ final class Command implements iCommand {
 
   /**
    * @param string $binary The binary to be executed, e.g. ls or composer
-   * @param iRunConfiguration $runConfiguration The run configuration to use when running the command
    * @param array<string> $arguments Arguments to use when running the command, e.g. '-l', 'install', '--composer', '--name=value'
    * @param array<string,string> $envVars Env vars to set when running the command. They will be prepended to the binary with the key as name
    * @param bool $sudo Flag to run the command with sudo
+   * @param iRunConfiguration $runConfiguration The run configuration to use when running the command
    */
   public function __construct(
     public string            $binary,
-    public iRunConfiguration $runConfiguration = new SimpleContainer(),
     public array             $arguments = [],
     public array             $envVars = [],
     public bool              $sudo = false,
+    public iRunConfiguration $runConfiguration = new SimpleContainer(),
   ) {}
 
   public function getRunConfiguration() : iRunConfiguration {
