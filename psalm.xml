@@ -21,15 +21,19 @@
   xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
   cacheDirectory=".cache/psalm"
 >
-    <projectFiles>
-        <directory name="src"/>
-        <ignoreFiles>
-            <directory name="vendor"/>
-        </ignoreFiles>
-    </projectFiles>
+  <projectFiles>
+    <directory name="src"/>
+    <ignoreFiles>
+      <directory name="vendor"/>
+    </ignoreFiles>
+  </projectFiles>
 
-    <issueHandlers>
-        <MissingConstructor errorLevel="suppress"/>
-        <PropertyNotSetInConstructor errorLevel="suppress"/>
-    </issueHandlers>
+  <extraFiles>
+    <directory name="vendor/deployer/deployer/src/"/>
+  </extraFiles>
+
+  <issueHandlers>
+    <MissingConstructor errorLevel="suppress"/>
+    <PropertyNotSetInConstructor errorLevel="suppress"/>
+  </issueHandlers>
 </psalm>
