@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.1](https://github.com/codenamephp/deployer.command/tree/1.0.1) (2022-07-31)
+
+[Full Changelog](https://github.com/codenamephp/deployer.command/compare/1.0.0...1.0.1)
+
+**Merged pull requests:**
+
+- Update deployer to release [\#4](https://github.com/codenamephp/deployer.command/pull/4) ([bastianschwarz](https://github.com/bastianschwarz))
+- Updated CI [\#3](https://github.com/codenamephp/deployer.command/pull/3) ([bastianschwarz](https://github.com/bastianschwarz))
+
 ## [1.0.0](https://github.com/codenamephp/deployer.command/tree/1.0.0) (2022-02-05)
 
 [Full Changelog](https://github.com/codenamephp/deployer.command/compare/84d18737da9ccff8afe1dbe387afb9ae2aa9fa6c...1.0.0)
