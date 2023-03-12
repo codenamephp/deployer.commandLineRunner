@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Update phive [\#9](https://github.com/codenamephp/deployer.command/pull/9) ([bastianschwarz](https://github.com/bastianschwarz))
 - Workflow Versions [\#6](https://github.com/codenamephp/deployer.command/pull/6) ([bastianschwarz](https://github.com/bastianschwarz))
 
 ## [1.0.1](https://github.com/codenamephp/deployer.command/tree/1.0.1) (2022-07-31)
