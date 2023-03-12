@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- PHPUnit10 [\#10](https://github.com/codenamephp/deployer.command/pull/10) ([bastianschwarz](https://github.com/bastianschwarz))
 - Update phive [\#9](https://github.com/codenamephp/deployer.command/pull/9) ([bastianschwarz](https://github.com/bastianschwarz))
 - Update codenamephp/deployer.base requirement from ^2.0 to ^2.0 || ^3.0 [\#8](https://github.com/codenamephp/deployer.command/pull/8) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump webdevops/php-dev from 8.1 to 8.2 in /docker/application [\#7](https://github.com/codenamephp/deployer.command/pull/7) ([dependabot[bot]](https://github.com/apps/dependabot))
