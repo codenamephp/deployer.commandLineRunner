@@ -42,6 +42,7 @@
     "composer-require-checker": "XDEBUG_MODE=off tools/composer-require-checker --no-interaction",
     "infection": "XDEBUG_MODE=coverage tools/infection --min-msi=100 --min-covered-msi=100 --threads=4 --no-progress --show-mutations",
     "ci-all": [
+      "composer validate",
       "@phpunit",
       "@psalm",
       "@composer-unused",
