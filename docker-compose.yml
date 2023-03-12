@@ -2,7 +2,7 @@ version: '3.6'
 
 services:
   application:
-    user: "${UID}:${GID}" #don't run as root by default to prevent permission conflicts
+    user: "${UID:-1000}:${GID:-1000}" #don't run as root by default to prevent permission conflicts
     build:
       context: docker/application
       args:
