@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.2](https://github.com/codenamephp/deployer.command/tree/1.0.2) (2023-03-12)
+
+[Full Changelog](https://github.com/codenamephp/deployer.command/compare/1.0.1...1.0.2)
+
+**Merged pull requests:**
+
+- Workflow Versions [\#6](https://github.com/codenamephp/deployer.command/pull/6) ([bastianschwarz](https://github.com/bastianschwarz))
+
 ## [1.0.1](https://github.com/codenamephp/deployer.command/tree/1.0.1) (2022-07-31)
 
 [Full Changelog](https://github.com/codenamephp/deployer.command/compare/1.0.0...1.0.1)
