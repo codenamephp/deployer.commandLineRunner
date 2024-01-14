@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0](https://github.com/codenamephp/deployer.command/tree/1.1.0) (2024-01-14)
+
+[Full Changelog](https://github.com/codenamephp/deployer.command/compare/1.0.2...1.1.0)
+
+**Implemented enhancements:**
+
+- Bump webdevops/php-dev from 8.2 to 8.3 in /docker/application [\#11](https://github.com/codenamephp/deployer.command/pull/11) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [1.0.2](https://github.com/codenamephp/deployer.command/tree/1.0.2) (2023-03-12)
 
 [Full Changelog](https://github.com/codenamephp/deployer.command/compare/1.0.1...1.0.2)
